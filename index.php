@@ -14,7 +14,7 @@ foreach($files as $file) {
       continue;
    }
       
-   echo '<li>' . $file . '</li>';
+   echo '<li><a href="/' . $file . '">' . $file . '</a></li>';
 }
 
 echo '</ul>';

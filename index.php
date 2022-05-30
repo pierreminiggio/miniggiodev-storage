@@ -6,7 +6,7 @@ $files = scandir($currentFolder);
 echo '<ul>';
 
 foreach($files as $file) {
-   if (in_array($file, ['.', '..', '.git']) {
+   if (in_array($file, ['.', '..', '.git'])) {
       continue;
    }
 

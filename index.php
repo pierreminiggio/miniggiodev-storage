@@ -6,9 +6,15 @@ $files = scandir($currentFolder);
 echo '<ul>';
 
 foreach($files as $file) {
-   if (is_dir($currentFolder . '/' . $file)) {
-      echo '<li>' . $file . '</li>';
+   if (in_array($file, ['.', '..', '.git']) {
+      continue;
    }
+
+   if (! is_dir($currentFolder . '/' . $file)) {
+      continue;
+   }
+      
+   echo '<li>' . $file . '</li>';
 }
 
 echo '</ul>';

@@ -1,0 +1,6 @@
+RewriteEngine on
+
+<filesmatch "\.(?i:srt)$">
+  AddType application/octet-stream .srt
+  Header set Content-Disposition attachment
+</FilesMatch>
